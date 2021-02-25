@@ -6,8 +6,8 @@ To run:
 
 This starts an Express server on `http://localhost:9999`.
 
-A ``GET http://localhost:9999`` will return the divisor results.
-A ``POST http://localhost:9999`` will submit the text search results to the external API and additionally return the results in the response.
+A `GET http://localhost:9999` will return the divisor results.
+A `POST http://localhost:9999` will submit the text search results to the external API and additionally return the results in the response.
 
 To run the Jest unit tests:
 

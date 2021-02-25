@@ -30,8 +30,9 @@ const create = () => {
       const possibleCandidate =
         text[i].toUpperCase() === subText[0].toUpperCase();
       if (possibleCandidate) {
-        const candidateFitsInRemainingLength = i + subText.length > text.length;
-        if (candidateFitsInRemainingLength) {
+        const candidateDoesNotFitInRemainingLength =
+          i + subText.length > text.length;
+        if (candidateDoesNotFitInRemainingLength) {
           return matches;
         }
         const matchFound = candidateFullyMatches(text, subText, i);
