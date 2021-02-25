@@ -1,0 +1,11 @@
+{
+  "name": "reckon-test",
+  "version": "1.0.0",
+  "description": "reckon test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
