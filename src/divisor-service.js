@@ -5,10 +5,7 @@ const create = () => {
     [divisorLine.divisor]: divisorLine.output,
   });
 
-  const buildDivisorMap = R.pipe(
-    R.map(extractDivisorOutput),
-    R.mergeAll
-    );
+  const buildDivisorMap = R.pipe(R.map(extractDivisorOutput), R.mergeAll);
 
   const isDivisibleBy = (number, divisor) => number % divisor === 0;
 
@@ -17,7 +14,7 @@ const create = () => {
       R.curry(isDivisibleBy)(number),
       R.keys(divisorMap)
     );
-    
+
     return R.reduce(
       (existingDivisorString, newDivisorString) =>
         existingDivisorString + R.path([newDivisorString], divisorMap),

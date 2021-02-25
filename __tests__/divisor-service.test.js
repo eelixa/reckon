@@ -19,7 +19,7 @@ it("should return divisibility for zero range", () => {
   );
 
   expect(divisibilityOutput).toStrictEqual({
-    1: ""
+    1: "",
   });
 });
 
@@ -29,8 +29,7 @@ it("should return divisibility for no divisors", () => {
     upper: 2,
   };
 
-  const divisorInfo = [
-  ];
+  const divisorInfo = [];
 
   const divisibilityOutput = divisorService.getDivisibilityOutput(
     rangeInfo,
@@ -39,7 +38,7 @@ it("should return divisibility for no divisors", () => {
 
   expect(divisibilityOutput).toStrictEqual({
     1: "",
-    2: ""
+    2: "",
   });
 });
 
@@ -84,7 +83,7 @@ it("should return divisibility for multiple divisors", () => {
     {
       divisor: 2,
       output: "two",
-    }
+    },
   ];
 
   const divisibilityOutput = divisorService.getDivisibilityOutput(
@@ -96,7 +95,6 @@ it("should return divisibility for multiple divisors", () => {
     1: "one",
     2: "onetwo",
     3: "one",
-    4: "onetwo"
+    4: "onetwo",
   });
 });
-
